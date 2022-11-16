@@ -1,0 +1,12 @@
+.showtime-button-container {
+  display: flex;
+  position: relative;
+}
+.showtime-button-button {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  background-color: var(--dl-color-template-blue-bg);
+}
+.showtime-button-button:hover {
+  background-color: var(--dl-color-template-blue-bg-light-hover);
+}

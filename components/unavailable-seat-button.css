@@ -1,0 +1,7 @@
+.unavailable-seat-button-container {
+  display: flex;
+  position: relative;
+}
+.unavailable-seat-button-button {
+  background-color: var(--dl-color-danger-700);
+}

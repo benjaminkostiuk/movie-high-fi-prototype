@@ -1,0 +1,34 @@
+.add-subtract-button-container {
+  flex: 0 0 auto;
+  width: auto;
+  height: 36px;
+  display: flex;
+  position: relative;
+}
+.add-subtract-button-remove-btn {
+  color: var(--dl-color-gray-white);
+  align-self: center;
+  transition: 0.3s;
+  border-radius: 50px;
+  background-color: var(--dl-color-gray-black);
+}
+.add-subtract-button-remove-btn:hover {
+  background-color: var(--dl-color-gray-500);
+}
+.add-subtract-button-input {
+  width: var(--dl-size-size-small);
+  align-self: center;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-halfunit);
+  border-radius: 50px;
+}
+.add-subtract-button-add-btn {
+  color: var(--dl-color-gray-white);
+  align-self: center;
+  transition: 0.3s;
+  border-radius: 50px;
+  background-color: var(--dl-color-gray-black);
+}
+.add-subtract-button-add-btn:hover {
+  background-color: var(--dl-color-gray-500);
+}

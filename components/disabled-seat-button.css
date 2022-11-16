@@ -1,0 +1,11 @@
+.disabled-seat-button-container {
+  display: flex;
+  position: relative;
+}
+.disabled-seat-button-button {
+  transition: 0.3s;
+  background-color: var(--dl-color-template-blue-bg);
+}
+.disabled-seat-button-button:hover {
+  background-color: var(--dl-color-template-blue-bg-light-hover);
+}

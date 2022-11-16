@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Seat-Selection-2-seat-map-pop-up - Online Movie Ticket System</title>
+    <meta
+      property="og:title"
+      content="Seat-Selection-2-seat-map-pop-up - Online Movie Ticket System"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./seat-selection-2-seat-map-pop-up.css" rel="stylesheet" />
+
+      <div class="seat-selection2seat-map-pop-up-container">
+        <div class="seat-selection2seat-map-pop-up-container01">
+          <span class="seat-selection2seat-map-pop-up-text">SCREEN</span>
+          <div class="seat-selection2seat-map-pop-up-container02">
+            <div class="seat-selection2seat-map-pop-up-left-seats">
+              <div class="seat-selection2seat-map-pop-up-container03">
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="disabled-seat-button-container">
+                  <button class="disabled-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="seat-selection2seat-map-pop-up-container04">
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="seat-selection2seat-map-pop-up-container05">
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seat-selection2seat-map-pop-up-container06">
+              <div class="seat-selection2seat-map-pop-up-container07">
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="seat-selection2seat-map-pop-up-container08">
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="unavailable-seat-button-container">
+                  <button
+                    disabled=""
+                    class="unavailable-seat-button-button button"
+                  >
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="seat-selection2seat-map-pop-up-container09">
+                <div class="unavailable-seat-button-container">
+                  <button
+                    disabled=""
+                    class="unavailable-seat-button-button button"
+                  >
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="unavailable-seat-button-container">
+                  <button
+                    disabled=""
+                    class="unavailable-seat-button-button button"
+                  >
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="seat-selection2seat-map-pop-up-right-seats">
+              <div class="seat-selection2seat-map-pop-up-container10">
+                <div class="disabled-seat-button-container">
+                  <button class="disabled-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="seat-selection2seat-map-pop-up-container11">
+                <div class="unavailable-seat-button-container">
+                  <button
+                    disabled=""
+                    class="unavailable-seat-button-button button"
+                  >
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="unavailable-seat-button-container">
+                  <button
+                    disabled=""
+                    class="unavailable-seat-button-button button"
+                  >
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+              <div class="seat-selection2seat-map-pop-up-container12">
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+                <div class="available-seat-button-container">
+                  <button class="available-seat-button-button button">
+                    <span>&nbsp;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seat-selection2seat-map-pop-up-container13">
+          <span>Legend</span>
+          <div class="seat-selection2seat-map-pop-up-legend">
+            <div class="seat-selection2seat-map-pop-up-container14">
+              <button
+                disabled=""
+                class="seat-selection2seat-map-pop-up-button button"
+              >
+                &nbsp;
+              </button>
+              <span>Available</span>
+            </div>
+            <div class="seat-selection2seat-map-pop-up-container15">
+              <button
+                disabled=""
+                class="seat-selection2seat-map-pop-up-button1 button"
+              >
+                &nbsp;
+              </button>
+              <span>Unavailable</span>
+            </div>
+            <div class="seat-selection2seat-map-pop-up-container16">
+              <button
+                disabled=""
+                class="seat-selection2seat-map-pop-up-button2 button"
+              >
+                &nbsp;
+              </button>
+              <span>Disability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

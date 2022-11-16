@@ -1,0 +1,178 @@
+.top-nav-sign-up-page-top-nav-signed-in {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: column;
+}
+.top-nav-sign-up-page-centered {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  box-sizing: initial;
+  align-items: center;
+  border-color: var(--dl-color-gray-black);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 50px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.top-nav-sign-up-page-left {
+  width: 769px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-sevenunits);
+}
+.top-nav-sign-up-page-logo {
+  top: 0px;
+  left: 8px;
+  width: 105px;
+  bottom: 0px;
+  margin: auto;
+  position: absolute;
+}
+.top-nav-sign-up-page-links {
+  top: 0px;
+  right: 41px;
+  bottom: 0px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+}
+.top-nav-sign-up-page-navlink {
+  text-decoration: none;
+}
+.top-nav-sign-up-page-text {
+  text-decoration: none;
+}
+.top-nav-sign-up-page-text1 {
+  text-decoration: none;
+}
+.top-nav-sign-up-page-text2 {
+  text-decoration: none;
+}
+.top-nav-sign-up-page-navlink1 {
+  text-decoration: none;
+}
+.top-nav-sign-up-page-navlink2 {
+  text-decoration: none;
+}
+.top-nav-sign-up-page-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.top-nav-sign-up-page-burger-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.top-nav-sign-up-page-mobile-menu-button {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+@media(max-width: 991px) {
+  .top-nav-sign-up-page-top-nav-signed-in {
+    height: auto;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .top-nav-sign-up-page-centered {
+    height: 60px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .top-nav-sign-up-page-left {
+    width: 100%;
+    margin-left: var(--dl-space-space-halfunit);
+    padding-bottom: 0px;
+  }
+  .top-nav-sign-up-page-logo {
+    width: 64px;
+  }
+  .top-nav-sign-up-page-links {
+    display: none;
+  }
+  .top-nav-sign-up-page-right {
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    bottom: 0px;
+    position: absolute;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: var(--dl-space-space-unit);
+    margin-bottom: auto;
+  }
+  .top-nav-sign-up-page-mobile-menu-button {
+    display: flex;
+  }
+}
+@media(max-width: 767px) {
+  .top-nav-sign-up-page-top-nav-signed-in {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .top-nav-sign-up-page-centered {
+    height: 60px;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .top-nav-sign-up-page-left {
+    width: 100%;
+    height: 100%;
+    margin-left: var(--dl-space-space-unit);
+    padding-bottom: 0px;
+  }
+  .top-nav-sign-up-page-links {
+    display: none;
+  }
+  .top-nav-sign-up-page-right {
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    display: flex;
+    position: absolute;
+    margin-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .top-nav-sign-up-page-top-nav-signed-in {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .top-nav-sign-up-page-centered {
+    position: relative;
+  }
+  .top-nav-sign-up-page-right {
+    top: 0px;
+    right: 0px;
+    width: var(--dl-size-size-xsmall);
+    position: absolute;
+  }
+  .top-nav-sign-up-page-burger-menu {
+    top: 10px;
+    right: 0px;
+    width: 40px;
+    position: absolute;
+  }
+}

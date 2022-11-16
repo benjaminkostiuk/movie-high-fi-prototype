@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Online Movie Ticket System</title>
+    <meta property="og:title" content="Online Movie Ticket System" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./movie-selection.css" rel="stylesheet" />
+
+      <div class="movie-selection-container">
+        <div class="movie-selection-page-container">
+          <div
+            class="top-nav-not-signed-in-top-nav-not-signed-in top-nav-not-signed-in-root-class-name"
+          >
+            <nav class="top-nav-not-signed-in-centered">
+              <div class="top-nav-not-signed-in-left">
+                <img
+                  alt="pastedImage"
+                  src="/playground_assets/pastedimage-no9b-200h.png"
+                  class="top-nav-not-signed-in-logo"
+                />
+                <div class="top-nav-not-signed-in-links">
+                  <a
+                    href="index.html"
+                    class="top-nav-not-signed-in-navlink Link"
+                  >
+                    <span>Action</span>
+                  </a>
+                  <a href="index.html" class="top-nav-not-signed-in-text Link">
+                    <span>Adventure</span>
+                  </a>
+                  <a href="index.html" class="top-nav-not-signed-in-text1 Link">
+                    <span>Comedy</span>
+                  </a>
+                  <a href="index.html" class="top-nav-not-signed-in-text2 Link">
+                    <span>Horror</span>
+                  </a>
+                  <a
+                    href="index.html"
+                    class="top-nav-not-signed-in-navlink1 Link"
+                  >
+                    <span>Drama</span>
+                  </a>
+                  <a
+                    href="snack-selection.html"
+                    class="top-nav-not-signed-in-navlink2 Link"
+                  >
+                    <span>Snacks</span>
+                  </a>
+                </div>
+              </div>
+              <div class="top-nav-not-signed-in-right">
+                <a href="index.html" class="top-nav-not-signed-in-login Link">
+                  <span>Login</span>
+                </a>
+                <div class="top-nav-not-signed-in-sign-up">
+                  <span class="top-nav-not-signed-in-text3">
+                    <span>Sign up</span>
+                  </span>
+                </div>
+                <div
+                  id="open-mobile-menu"
+                  class="top-nav-not-signed-in-burger-menu"
+                >
+                  <img
+                    alt="pastedImage"
+                    src="/playground_assets/pastedimage-yxbd.svg"
+                    class="top-nav-not-signed-in-mobile-menu-button"
+                  />
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="movie-selection-container1">
+            <h1 class="movie-selection-heading">
+              <span>POPULAR RELEASES</span>
+              <br />
+            </h1>
+          </div>
+          <div class="movie-selection-blog">
+            <div class="movie-selection-container2">
+              <div
+                class="blog-post-card2-blog-post-card blog-post-card2-root-class-name"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1579445710183-f9a816f5da05?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGF2ZW5nZXJ8ZW58MHx8fHwxNjY4NDkxODE3&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="blog-post-card2-image"
+                />
+                <div class="blog-post-card2-container">
+                  <div class="blog-post-card2-container1">
+                    <span class="blog-post-card2-text">
+                      <span>Genre: Action</span>
+                    </span>
+                    <span class="blog-post-card2-text01">
+                      <span>Released: 3 days ago</span>
+                    </span>
+                  </div>
+                  <h1 class="blog-post-card2-text02">
+                    <span>Dark Knight Rises</span>
+                  </h1>
+                  <a
+                    href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="blog-post-card2-link"
+                  >
+                    <span>Watch Trailer -&gt;</span>
+                  </a>
+                  <span class="blog-post-card2-text03">
+                    <span>
+                      Batman being Batman. He is Batman and he is sad so he is
+                      defeating bad guys to get over his past.
+                    </span>
+                  </span>
+                  <div class="blog-post-card2-stats">
+                    <div class="blog-post-card2-stat">
+                      <svg viewBox="0 0 1152 1024" class="blog-post-card2-icon">
+                        <path
+                          d="M768 770.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+                        ></path>
+                        <path
+                          d="M327.196 795.328c55.31-36.15 124.080-63.636 199.788-80.414-15.054-17.784-28.708-37.622-40.492-59.020-30.414-55.234-46.492-116.058-46.492-175.894 0-86.042 0-167.31 30.6-233.762 29.706-64.504 83.128-104.496 159.222-119.488-16.914-76.48-61.94-126.75-181.822-126.75-192 0-192 128.942-192 288 0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h279.006c14.518-12.91 30.596-25.172 48.19-36.672z"
+                        ></path>
+                      </svg>
+                      <span class="blog-post-card2-text04">Weekly viewers</span>
+                      <h1 class="blog-post-card2-text05">
+                        <span>500K</span>
+                        <br />
+                      </h1>
+                    </div>
+                    <div class="blog-post-card2-stat1">
+                      <svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="blog-post-card2-icon3"
+                      >
+                        <path
+                          d="M677.714 546.857l146.857-142.857-241.143-35.429-17.143-34.286-90.857-184v550.286l33.714 17.714 181.714 96-34.286-202.857-6.857-37.714zM936 397.143l-207.429 202.286 49.143 285.714c4 25.143-5.143 40-22.857 40-6.286 0-14.286-2.286-22.857-6.857l-256.571-134.857-256.571 134.857c-8.571 4.571-16.571 6.857-22.857 6.857-17.714 0-26.857-14.857-22.857-40l49.143-285.714-208-202.286c-24.571-24.571-16.571-48.571 17.714-53.714l286.857-41.714 128.571-260c7.429-15.429 17.714-23.429 28-23.429v0c10.286 0 20 8 28 23.429l128.571 260 286.857 41.714c34.286 5.143 42.286 29.143 17.143 53.714z"
+                        ></path>
+                      </svg>
+                      <span class="blog-post-card2-text08">Ratings</span>
+                      <h1 class="blog-post-card2-text09">4.8/5</h1>
+                    </div>
+                    <div class="blog-post-card2-stat2">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        class="blog-post-card2-icon5"
+                      >
+                        <path
+                          d="M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM658.744 749.256l-210.744-210.746v-282.51h128v229.49l173.256 173.254-90.512 90.512z"
+                        ></path>
+                      </svg>
+                      <span class="blog-post-card2-text10">
+                        <span class="blog-post-card2-text11">Length</span>
+                        <br />
+                      </span>
+                      <h1 class="blog-post-card2-text13">2hr</h1>
+                    </div>
+                  </div>
+                  <div class="blog-post-card2-container2">
+                    <div class="blog-post-card2-profile"></div>
+                    <button class="blog-post-card2-button button">
+                      <span>Buy Tickets</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="movie-selection-container3">
+              <div
+                class="blog-post-card2-blog-post-card blog-post-card2-root-class-name"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1579445710183-f9a816f5da05?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGF2ZW5nZXJ8ZW58MHx8fHwxNjY4NDkxODE3&amp;ixlib=rb-4.0.3&amp;w=1500"
+                  image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="blog-post-card2-image"
+                />
+                <div class="blog-post-card2-container">
+                  <div class="blog-post-card2-container1">
+                    <span class="blog-post-card2-text">
+                      <span>Genre: Action</span>
+                    </span>
+                    <span class="blog-post-card2-text01">
+                      <span>Released: 3 days ago</span>
+                    </span>
+                  </div>
+                  <h1 class="blog-post-card2-text02">
+                    <span>Dark Knight Rises</span>
+                  </h1>
+                  <a
+                    href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="blog-post-card2-link"
+                  >
+                    <span>Watch Trailer -&gt;</span>
+                  </a>
+                  <span class="blog-post-card2-text03">
+                    <span>
+                      Batman being Batman. He is Batman and he is sad so he is
+                      defeating bad guys to get over his past.
+                    </span>
+                  </span>
+                  <div class="blog-post-card2-stats">
+                    <div class="blog-post-card2-stat">
+                      <svg viewBox="0 0 1152 1024" class="blog-post-card2-icon">
+                        <path
+                          d="M768 770.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+                        ></path>
+                        <path
+                          d="M327.196 795.328c55.31-36.15 124.080-63.636 199.788-80.414-15.054-17.784-28.708-37.622-40.492-59.020-30.414-55.234-46.492-116.058-46.492-175.894 0-86.042 0-167.31 30.6-233.762 29.706-64.504 83.128-104.496 159.222-119.488-16.914-76.48-61.94-126.75-181.822-126.75-192 0-192 128.942-192 288 0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h279.006c14.518-12.91 30.596-25.172 48.19-36.672z"
+                        ></path>
+                      </svg>
+                      <span class="blog-post-card2-text04">Weekly viewers</span>
+                      <h1 class="blog-post-card2-text05">
+                        <span>500K</span>
+                        <br />
+                      </h1>
+                    </div>
+                    <div class="blog-post-card2-stat1">
+                      <svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="blog-post-card2-icon3"
+                      >
+                        <path
+                          d="M677.714 546.857l146.857-142.857-241.143-35.429-17.143-34.286-90.857-184v550.286l33.714 17.714 181.714 96-34.286-202.857-6.857-37.714zM936 397.143l-207.429 202.286 49.143 285.714c4 25.143-5.143 40-22.857 40-6.286 0-14.286-2.286-22.857-6.857l-256.571-134.857-256.571 134.857c-8.571 4.571-16.571 6.857-22.857 6.857-17.714 0-26.857-14.857-22.857-40l49.143-285.714-208-202.286c-24.571-24.571-16.571-48.571 17.714-53.714l286.857-41.714 128.571-260c7.429-15.429 17.714-23.429 28-23.429v0c10.286 0 20 8 28 23.429l128.571 260 286.857 41.714c34.286 5.143 42.286 29.143 17.143 53.714z"
+                        ></path>
+                      </svg>
+                      <span class="blog-post-card2-text08">Ratings</span>
+                      <h1 class="blog-post-card2-text09">4.8/5</h1>
+                    </div>
+                    <div class="blog-post-card2-stat2">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        class="blog-post-card2-icon5"
+                      >
+                        <path
+                          d="M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM658.744 749.256l-210.744-210.746v-282.51h128v229.49l173.256 173.254-90.512 90.512z"
+                        ></path>
+                      </svg>
+                      <span class="blog-post-card2-text10">
+                        <span class="blog-post-card2-text11">Length</span>
+                        <br />
+                      </span>
+                      <h1 class="blog-post-card2-text13">2hr</h1>
+                    </div>
+                  </div>
+                  <div class="blog-post-card2-container2">
+                    <div class="blog-post-card2-profile"></div>
+                    <button class="blog-post-card2-button button">
+                      <span>Buy Tickets</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="movie-selection-container4">
+            <h1 class="movie-selection-heading1">
+              <span>MOVIES</span>
+              <br />
+            </h1>
+          </div>
+          <div class="movie-selection-gallery">
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Avengers Endgame</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name1"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Dark Knight Rises</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name2"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Titanic</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name3"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>21 Jump Street</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name4"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Frozen</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name5"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Big Hero 6</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+          </div>
+          <div class="movie-selection-container5">
+            <h1 class="movie-selection-heading2">Action</h1>
+          </div>
+          <div class="movie-selection-gallery1">
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Avengers Endgame</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name1"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Dark Knight Rises</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name2"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Titanic</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+          </div>
+          <div class="movie-selection-container6">
+            <h1 class="movie-selection-heading3">Comedy</h1>
+          </div>
+          <div class="movie-selection-gallery2">
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Avengers Endgame</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name1"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Dark Knight Rises</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name2"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Titanic</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+          </div>
+          <div class="movie-selection-container7">
+            <h1 class="movie-selection-heading4">Romance</h1>
+          </div>
+          <div class="movie-selection-gallery3">
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Avengers Endgame</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name1"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Dark Knight Rises</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name2"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Titanic</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+          </div>
+          <div class="movie-selection-container8">
+            <h1 class="movie-selection-heading5">Horror</h1>
+          </div>
+          <div class="movie-selection-gallery4">
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Avengers Endgame</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name1"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Dark Knight Rises</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name2"
+            >
+              <img
+                alt="Movie Title"
+                src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDMxfHxtb3ZpZXxlbnwwfHx8fDE2Njg0OTExMjI&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>Titanic</span></h2>
+              <span class="gallery-card1-text1">
+                <span>Movie Rating: 3.9/5</span>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gallery-card1-link"
+              >
+                <span>Watch Trailer -&gt;</span>
+              </a>
+              <button class="gallery-card1-button button">
+                <span>Buy Tickets</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
