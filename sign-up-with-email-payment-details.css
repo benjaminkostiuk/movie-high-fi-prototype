@@ -177,7 +177,7 @@
   }
 }
 
-.sign-up-with-phone-payment-details-container {
+.sign-up-with-email-payment-details-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -185,7 +185,7 @@
   align-items: center;
   flex-direction: column;
 }
-.sign-up-with-phone-payment-details-page-container {
+.sign-up-with-email-payment-details-page-container {
   width: 100%;
   height: 1006px;
   display: flex;
@@ -200,7 +200,7 @@
   padding-bottom: 754px;
   background-color: var(--dl-color-template-blue-bg);
 }
-.sign-up-with-phone-payment-details-title {
+.sign-up-with-email-payment-details-title {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -208,12 +208,12 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.sign-up-with-phone-payment-details-heading {
+.sign-up-with-email-payment-details-heading {
   color: var(--dl-color-gray-white);
   font-size: 56px;
   padding-top: var(--dl-space-space-threeunits);
 }
-.sign-up-with-phone-payment-details-main-box {
+.sign-up-with-email-payment-details-main-box {
   width: 100%;
   height: 755px;
   display: flex;
@@ -221,7 +221,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.sign-up-with-phone-payment-details-main-view {
+.sign-up-with-email-payment-details-main-view {
   width: 100%;
   height: 469px;
   display: flex;
@@ -238,7 +238,7 @@
   justify-content: center;
   background-color: var(--dl-color-gray-white);
 }
-.sign-up-with-phone-payment-details-left-panel {
+.sign-up-with-email-payment-details-left-panel {
   top: 1px;
   left: 0px;
   width: 35%;
@@ -251,14 +251,14 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.sign-up-with-phone-payment-details-progression-bar {
+.sign-up-with-email-payment-details-progression-bar {
   width: 33px;
   height: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.sign-up-with-phone-payment-details-progression-bar-line {
+.sign-up-with-email-payment-details-progression-bar-line {
   flex: 0 0 auto;
   width: 2px;
   height: 90%;
@@ -272,100 +272,122 @@
   justify-content: center;
   background-color: #000000;
 }
-.sign-up-with-phone-payment-details-navlink {
+.sign-up-with-email-payment-details-navlink {
   display: contents;
 }
-.sign-up-with-phone-payment-details-icon {
+.sign-up-with-email-payment-details-icon {
   top: -10px;
-  left: -9px;
+  left: -11px;
   width: 20px;
   height: 20px;
   position: absolute;
+  margin-left: 2px;
+  margin-bottom: 105px;
   text-decoration: none;
 }
-.sign-up-with-phone-payment-details-image {
-  left: -14px;
-  width: 30px;
-  bottom: -14px;
-  position: absolute;
-  object-fit: cover;
-}
-.sign-up-with-phone-payment-details-navlink1 {
-  display: contents;
-}
-.sign-up-with-phone-payment-details-icon2 {
-  top: 0px;
+.sign-up-with-email-payment-details-icon2 {
   left: -9px;
   width: 20px;
   bottom: 0px;
   height: 20px;
-  margin: auto;
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 105px;
+  margin-bottom: -10px;
+}
+.sign-up-with-email-payment-details-navlink1 {
+  display: contents;
+}
+.sign-up-with-email-payment-details-icon4 {
+  top: 0px;
+  left: -9px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-top: 110px;
+  margin-bottom: 110px;
   text-decoration: none;
 }
-.sign-up-with-phone-payment-details-titles {
+.sign-up-with-email-payment-details-image {
+  left: -14px;
+  width: 30px;
+  bottom: 0px;
+  position: absolute;
+  object-fit: cover;
+  margin-bottom: 105px;
+}
+.sign-up-with-email-payment-details-titles {
   width: 80%;
   height: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.sign-up-with-phone-payment-details-personal-information {
+.sign-up-with-email-payment-details-personal-information {
   flex: 0 0 auto;
   width: 100%;
-  height: 33%;
+  height: 25%;
   display: flex;
   align-items: flex-start;
-  padding-top: 14px;
+  padding-bottom: 58px;
 }
-.sign-up-with-phone-payment-details-navlink2 {
+.sign-up-with-email-payment-details-navlink2 {
   color: var(--dl-color-template-blue-bg-light-hover);
-  font-size: 14px;
-  align-self: flex-start;
-  font-weight: 700;
-  text-decoration: none;
-}
-.sign-up-with-phone-payment-details-password-setup {
-  flex: 0 0 auto;
-  width: 100%;
-  height: 34%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  padding-bottom: 0px;
-  justify-content: flex-start;
-}
-.sign-up-with-phone-payment-details-navlink3 {
-  color: var(--dl-color-template-blue-bg-light-hover);
-  position: absolute;
   font-size: 14px;
   align-self: center;
   font-weight: 700;
   text-decoration: none;
 }
-.sign-up-with-phone-payment-details-payment-details {
+.sign-up-with-email-payment-details-password-setup {
   flex: 0 0 auto;
   width: 100%;
-  height: 33%;
+  height: 25%;
   display: flex;
   align-items: flex-start;
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: 20px;
 }
-.sign-up-with-phone-payment-details-text2 {
+.sign-up-with-email-payment-details-navlink3 {
+  color: var(--dl-color-template-blue-bg-light-hover);
+  font-size: 14px;
+  align-self: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+.sign-up-with-email-payment-details-payment-details {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.sign-up-with-email-payment-details-text2 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 22px;
-  align-self: flex-end;
+  align-self: center;
   font-weight: 700;
 }
-.sign-up-with-phone-payment-details-right-panel {
+.sign-up-with-email-payment-details-email-confirmation {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 58px;
+}
+.sign-up-with-email-payment-details-text3 {
+  color: var(--dl-color-template-blue-bg-light-hover);
+  font-size: 14px;
+  align-self: center;
+  font-weight: 700;
+}
+.sign-up-with-email-payment-details-right-panel {
   top: 1px;
   right: 0px;
   width: 65%;
   height: 86%;
   margin: var(--dl-space-space-twounits);
   display: flex;
+  padding: 0px;
   position: absolute;
   align-items: flex-start;
   border-color: #000000;
@@ -376,7 +398,7 @@
   border-right-width: 0px;
   border-bottom-width: 0px;
 }
-.sign-up-with-phone-payment-details-card-owner-container {
+.sign-up-with-email-payment-details-card-owner-container {
   flex: 0 0 auto;
   height: 80px;
   display: flex;
@@ -386,62 +408,24 @@
   margin-right: var(--dl-space-space-threeunits);
   justify-content: flex-end;
 }
-.sign-up-with-phone-payment-details-card-owner {
+.sign-up-with-email-payment-details-card-owner {
   flex: 0 0 auto;
-  width: 40%;
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-right: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-text3 {
+.sign-up-with-email-payment-details-text4 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
 }
-.sign-up-with-phone-payment-details-firstname-input {
+.sign-up-with-email-payment-details-firstname-input {
   flex: 0 0 auto;
-  width: 60%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  padding-left: 0px;
-  flex-direction: column;
-  justify-content: center;
-}
-.sign-up-with-phone-payment-details-textinput {
   width: 70%;
-}
-.sign-up-with-phone-payment-details-card-number-container {
-  flex: 0 0 auto;
-  height: 80px;
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  margin-left: var(--dl-space-space-threeunits);
-  margin-right: var(--dl-space-space-threeunits);
-  justify-content: flex-end;
-}
-.sign-up-with-phone-payment-details-card-number {
-  flex: 0 0 auto;
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-right: var(--dl-space-space-twounits);
-  flex-direction: column;
-  justify-content: center;
-}
-.sign-up-with-phone-payment-details-text4 {
-  align-self: flex-end;
-  font-style: normal;
-  font-weight: 700;
-}
-.sign-up-with-phone-payment-details-lastname-input {
-  flex: 0 0 auto;
-  width: 60%;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -449,10 +433,10 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-textinput1 {
+.sign-up-with-email-payment-details-textinput {
   width: 80%;
 }
-.sign-up-with-phone-payment-details-exp-date-container {
+.sign-up-with-email-payment-details-card-number-container {
   flex: 0 0 auto;
   height: 80px;
   display: flex;
@@ -462,24 +446,24 @@
   margin-right: var(--dl-space-space-threeunits);
   justify-content: flex-end;
 }
-.sign-up-with-phone-payment-details-expiration-date {
+.sign-up-with-email-payment-details-card-number {
   flex: 0 0 auto;
-  width: 40%;
+  width: 170px;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-right: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-text5 {
+.sign-up-with-email-payment-details-text5 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
 }
-.sign-up-with-phone-payment-details-email-input {
+.sign-up-with-email-payment-details-lastname-input {
   flex: 0 0 auto;
-  width: 60%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -487,10 +471,10 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-textinput2 {
-  width: 35%;
+.sign-up-with-email-payment-details-textinput1 {
+  width: 70%;
 }
-.sign-up-with-phone-payment-details-exp-date-container1 {
+.sign-up-with-email-payment-details-exp-date-container {
   flex: 0 0 auto;
   height: 80px;
   display: flex;
@@ -500,24 +484,24 @@
   margin-right: var(--dl-space-space-threeunits);
   justify-content: flex-end;
 }
-.sign-up-with-phone-payment-details-expiration-date1 {
+.sign-up-with-email-payment-details-expiration-date {
   flex: 0 0 auto;
-  width: 40%;
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-right: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-text6 {
+.sign-up-with-email-payment-details-text6 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
 }
-.sign-up-with-phone-payment-details-email-input1 {
+.sign-up-with-email-payment-details-email-input {
   flex: 0 0 auto;
-  width: 60%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -525,24 +509,62 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-textinput3 {
-  width: 25%;
+.sign-up-with-email-payment-details-textinput2 {
+  width: 26%;
 }
-.sign-up-with-phone-payment-details-next-button-container {
+.sign-up-with-email-payment-details-exp-date-container1 {
+  flex: 0 0 auto;
+  height: 80px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  margin-left: var(--dl-space-space-threeunits);
+  margin-right: var(--dl-space-space-threeunits);
+  justify-content: flex-end;
+}
+.sign-up-with-email-payment-details-expiration-date1 {
+  flex: 0 0 auto;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.sign-up-with-email-payment-details-text7 {
+  align-self: flex-end;
+  font-style: normal;
+  font-weight: 700;
+}
+.sign-up-with-email-payment-details-email-input1 {
+  flex: 0 0 auto;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0px;
+  flex-direction: column;
+  justify-content: center;
+}
+.sign-up-with-email-payment-details-textinput3 {
+  width: 19%;
+}
+.sign-up-with-email-payment-details-next-button-container {
   flex: 0 0 auto;
   height: 50px;
   display: flex;
   align-self: center;
   margin-top: var(--dl-space-space-oneandhalfunits);
   align-items: center;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: var(--dl-space-space-threeunits);
+  margin-right: var(--dl-space-space-threeunits);
   justify-content: flex-end;
 }
-.sign-up-with-phone-payment-details-navlink4 {
+.sign-up-with-email-payment-details-navlink4 {
   display: contents;
 }
-.sign-up-with-phone-payment-details-next-button {
+.sign-up-with-email-payment-details-next-button {
   cursor: pointer;
   display: flex;
   transition: 0.3s;
@@ -556,75 +578,41 @@
   text-decoration: none;
   background-color: #000000;
 }
-.sign-up-with-phone-payment-details-next-button:hover {
+.sign-up-with-email-payment-details-next-button:hover {
   background-color: #5228F5;
 }
-.sign-up-with-phone-payment-details-next {
+.sign-up-with-email-payment-details-next {
   color: rgb(255, 255, 255);
   font-style: normal;
   font-weight: 600;
 }
 @media(max-width: 991px) {
-  .sign-up-with-phone-payment-details-titles {
+  .sign-up-with-email-payment-details-titles {
     display: none;
   }
-  .sign-up-with-phone-payment-details-right-panel {
+  .sign-up-with-email-payment-details-right-panel {
     top: 0px;
     left: 0px;
     right: 0px;
-    width: 80%;
     bottom: 0px;
     margin: auto;
     border-width: 0px;
   }
-  .sign-up-with-phone-payment-details-textinput {
-    width: 90%;
-  }
-  .sign-up-with-phone-payment-details-textinput1 {
+  .sign-up-with-email-payment-details-textinput {
     width: 100%;
   }
-  .sign-up-with-phone-payment-details-textinput2 {
-    width: 45%;
+  .sign-up-with-email-payment-details-textinput1 {
+    width: 100%;
   }
-  .sign-up-with-phone-payment-details-textinput3 {
-    width: 30%;
+  .sign-up-with-email-payment-details-textinput2 {
+    width: 80%;
+  }
+  .sign-up-with-email-payment-details-textinput3 {
+    width: 70%;
   }
 }
 @media(max-width: 767px) {
-  .sign-up-with-phone-payment-details-left-panel {
+  .sign-up-with-email-payment-details-left-panel {
     display: none;
-  }
-  .sign-up-with-phone-payment-details-right-panel {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-    border-width: 0px;
-  }
-  .sign-up-with-phone-payment-details-textinput {
-    width: 100%;
-  }
-  .sign-up-with-phone-payment-details-textinput1 {
-    width: 100%;
-  }
-  .sign-up-with-phone-payment-details-textinput2 {
-    width: 100%;
-  }
-  .sign-up-with-phone-payment-details-textinput3 {
-    width: 100%;
-  }
-}
-@media(max-width: 479px) {
-  .sign-up-with-phone-payment-details-left-panel {
-    display: none;
-  }
-  .sign-up-with-phone-payment-details-right-panel {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-    border-width: 0px;
   }
 }
