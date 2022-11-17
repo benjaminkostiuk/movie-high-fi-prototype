@@ -462,6 +462,9 @@
   margin-right: var(--dl-space-space-threeunits);
   justify-content: flex-end;
 }
+.sign-up-with-phone-phone-number-navlink {
+  display: contents;
+}
 .sign-up-with-phone-phone-number-next-button {
   cursor: pointer;
   display: flex;
