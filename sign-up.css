@@ -321,6 +321,9 @@
   font-style: normal;
   font-weight: 600;
 }
+.sign-up-navlink {
+  display: contents;
+}
 .sign-up-sign-up3 {
   width: 381px;
   cursor: pointer;
@@ -347,6 +350,9 @@
   color: #000000;
   font-style: normal;
   font-weight: 600;
+}
+.sign-up-navlink1 {
+  display: contents;
 }
 .sign-up-sign-up4 {
   width: 381px;
