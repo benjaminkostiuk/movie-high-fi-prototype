@@ -272,6 +272,9 @@
   justify-content: center;
   background-color: #000000;
 }
+.sign-up-with-email-email-confirmation-navlink {
+  display: contents;
+}
 .sign-up-with-email-email-confirmation-icon {
   top: -10px;
   left: -9px;
@@ -279,6 +282,10 @@
   height: 20px;
   position: absolute;
   margin-bottom: 105px;
+  text-decoration: none;
+}
+.sign-up-with-email-email-confirmation-navlink1 {
+  display: contents;
 }
 .sign-up-with-email-email-confirmation-icon2 {
   left: -9px;
@@ -288,6 +295,10 @@
   position: absolute;
   margin-top: 110px;
   margin-bottom: 110px;
+  text-decoration: none;
+}
+.sign-up-with-email-email-confirmation-navlink2 {
+  display: contents;
 }
 .sign-up-with-email-email-confirmation-icon4 {
   top: 0px;
@@ -297,6 +308,7 @@
   position: absolute;
   margin-top: 110px;
   margin-bottom: 110px;
+  text-decoration: none;
 }
 .sign-up-with-email-email-confirmation-image {
   left: -14px;
@@ -323,11 +335,12 @@
   align-items: flex-start;
   padding-bottom: 58px;
 }
-.sign-up-with-email-email-confirmation-text02 {
+.sign-up-with-email-email-confirmation-navlink3 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 14px;
   align-self: center;
   font-weight: 700;
+  text-decoration: none;
 }
 .sign-up-with-email-email-confirmation-password-setup {
   flex: 0 0 auto;
@@ -337,11 +350,12 @@
   align-items: flex-start;
   padding-bottom: 20px;
 }
-.sign-up-with-email-email-confirmation-text03 {
+.sign-up-with-email-email-confirmation-navlink4 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 14px;
   align-self: center;
   font-weight: 700;
+  text-decoration: none;
 }
 .sign-up-with-email-email-confirmation-payment-details {
   flex: 0 0 auto;
@@ -351,11 +365,12 @@
   align-items: flex-start;
   padding-top: 20px;
 }
-.sign-up-with-email-email-confirmation-text04 {
+.sign-up-with-email-email-confirmation-navlink5 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 14px;
   align-self: center;
   font-weight: 700;
+  text-decoration: none;
 }
 .sign-up-with-email-email-confirmation-email-confirmation {
   flex: 0 0 auto;
@@ -365,7 +380,7 @@
   align-items: flex-start;
   padding-top: 58px;
 }
-.sign-up-with-email-email-confirmation-text05 {
+.sign-up-with-email-email-confirmation-text2 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 22px;
   align-self: center;
@@ -401,7 +416,7 @@
   margin-right: var(--dl-space-space-threeunits);
   justify-content: center;
 }
-.sign-up-with-email-email-confirmation-text06 {
+.sign-up-with-email-email-confirmation-text3 {
   font-size: 20px;
   align-self: flex-end;
   font-style: normal;
@@ -431,6 +446,9 @@
   margin-left: var(--dl-space-space-threeunits);
   margin-right: var(--dl-space-space-threeunits);
   justify-content: flex-end;
+}
+.sign-up-with-email-email-confirmation-navlink6 {
+  display: contents;
 }
 .sign-up-with-email-email-confirmation-next-button {
   cursor: pointer;
