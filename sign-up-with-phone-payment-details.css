@@ -272,12 +272,16 @@
   justify-content: center;
   background-color: #000000;
 }
+.sign-up-with-phone-payment-details-navlink {
+  display: contents;
+}
 .sign-up-with-phone-payment-details-icon {
   top: -10px;
   left: -9px;
   width: 20px;
   height: 20px;
   position: absolute;
+  text-decoration: none;
 }
 .sign-up-with-phone-payment-details-image {
   left: -14px;
@@ -285,6 +289,9 @@
   bottom: -14px;
   position: absolute;
   object-fit: cover;
+}
+.sign-up-with-phone-payment-details-navlink1 {
+  display: contents;
 }
 .sign-up-with-phone-payment-details-icon2 {
   top: 0px;
@@ -296,6 +303,7 @@
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
 }
 .sign-up-with-phone-payment-details-titles {
   width: 80%;
@@ -312,11 +320,12 @@
   align-items: flex-start;
   padding-top: 14px;
 }
-.sign-up-with-phone-payment-details-text2 {
+.sign-up-with-phone-payment-details-navlink2 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 14px;
   align-self: flex-start;
   font-weight: 700;
+  text-decoration: none;
 }
 .sign-up-with-phone-payment-details-password-setup {
   flex: 0 0 auto;
@@ -328,12 +337,13 @@
   padding-bottom: 0px;
   justify-content: flex-start;
 }
-.sign-up-with-phone-payment-details-text3 {
+.sign-up-with-phone-payment-details-navlink3 {
   color: var(--dl-color-template-blue-bg-light-hover);
   position: absolute;
   font-size: 14px;
   align-self: center;
   font-weight: 700;
+  text-decoration: none;
 }
 .sign-up-with-phone-payment-details-payment-details {
   flex: 0 0 auto;
@@ -343,7 +353,7 @@
   align-items: flex-start;
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.sign-up-with-phone-payment-details-text4 {
+.sign-up-with-phone-payment-details-text2 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 22px;
   align-self: flex-end;
@@ -386,7 +396,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-text5 {
+.sign-up-with-phone-payment-details-text3 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
@@ -424,7 +434,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-text6 {
+.sign-up-with-phone-payment-details-text4 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
@@ -462,7 +472,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-text7 {
+.sign-up-with-phone-payment-details-text5 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
@@ -500,7 +510,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-payment-details-text8 {
+.sign-up-with-phone-payment-details-text6 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
@@ -528,6 +538,9 @@
   margin-left: 0px;
   margin-right: 0px;
   justify-content: flex-end;
+}
+.sign-up-with-phone-payment-details-navlink4 {
+  display: contents;
 }
 .sign-up-with-phone-payment-details-next-button {
   cursor: pointer;
