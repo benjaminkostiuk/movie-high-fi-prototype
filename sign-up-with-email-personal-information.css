@@ -653,6 +653,9 @@
   margin-right: var(--dl-space-space-threeunits);
   justify-content: flex-end;
 }
+.sign-up-with-email-personal-information-navlink {
+  display: contents;
+}
 .sign-up-with-email-personal-information-next-button {
   cursor: pointer;
   display: flex;
@@ -674,6 +677,7 @@
   color: rgb(255, 255, 255);
   font-style: normal;
   font-weight: 600;
+  margin-right: 0px;
 }
 @media(max-width: 991px) {
   .sign-up-with-email-personal-information-titles {
