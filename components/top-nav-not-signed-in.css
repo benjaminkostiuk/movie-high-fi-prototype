@@ -71,6 +71,9 @@
   margin-right: 20px;
   text-decoration: none;
 }
+.top-nav-not-signed-in-navlink3 {
+  display: contents;
+}
 .top-nav-not-signed-in-sign-up {
   cursor: pointer;
   display: flex;
