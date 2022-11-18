@@ -36,14 +36,33 @@
   color: var(--dl-color-gray-white);
   margin-top: var(--dl-space-space-twounits);
 }
-.gallery-card1-button {
+.gallery-card1-navlink {
   color: var(--dl-color-gray-white);
   margin: var(--dl-space-space-unit);
   padding-top: var(--dl-space-space-unit);
   border-radius: 50px;
   padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
   background-color: var(--dl-color-gray-black);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

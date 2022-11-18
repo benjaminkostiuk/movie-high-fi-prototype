@@ -38,25 +38,31 @@
 .top-nav-signed-in-links {
   display: flex;
   align-items: center;
-  margin-left: 33px;
+  margin-left: var(--dl-space-space-oneandhalfunits);
   flex-direction: row;
 }
 .top-nav-signed-in-navlink {
+  margin-right: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
 .top-nav-signed-in-text {
+  margin-right: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
 .top-nav-signed-in-text1 {
+  margin-right: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
 .top-nav-signed-in-text2 {
+  margin-right: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
 .top-nav-signed-in-navlink1 {
+  margin-right: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
 .top-nav-signed-in-navlink2 {
+  margin-right: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
 .top-nav-signed-in-right {
@@ -83,6 +89,27 @@
 .top-nav-signed-in-login {
   align-self: flex-end;
   margin-right: 20px;
+}
+.top-nav-signed-in-points {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-template-blue-bg);
+  border-width: 2px;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: center;
+}
+.top-nav-signed-in-point-bal {
+  align-self: flex-end;
+  margin-right: 0px;
 }
 .top-nav-signed-in-navlink3 {
   display: contents;
@@ -129,6 +156,7 @@
 .top-nav-signed-in-root-class-name {
   margin-top: 0px;
 }
+
 @media(max-width: 1200px) {
   .top-nav-signed-in-root-class-name {
     width: 85%;
@@ -156,6 +184,9 @@
   .top-nav-signed-in-login {
     display: none;
   }
+  .top-nav-signed-in-point-bal {
+    display: none;
+  }
   .top-nav-signed-in-sign-up {
     display: none;
   }
@@ -179,6 +210,9 @@
     margin-right: var(--dl-space-space-unit);
   }
   .top-nav-signed-in-login {
+    display: none;
+  }
+  .top-nav-signed-in-point-bal {
     display: none;
   }
   .top-nav-signed-in-sign-up {
