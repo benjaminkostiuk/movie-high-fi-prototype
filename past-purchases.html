@@ -96,6 +96,12 @@
           3: "total-3"
         };
 
+        buttons = {
+          1: "refund-button-1",
+          2: "refund-button-2",
+          3: "refund-button-3"
+        };
+
         sum = 0;
         for(const prop in ops[orderNum]) {
           var checkBox = document.getElementById(prop);
@@ -106,6 +112,13 @@
         var text = document.getElementById(labels[orderNum]);
         // Set the inner html
         text.innerHTML = `$${sum.toFixed(2)}`;
+        var button = document.getElementById(buttons[orderNum]);
+        if(sum == 0) {     
+          button.style.pointerEvents = "none";
+          button.style.backgroundColor = "gray";
+        } else {
+          button.style = null;
+        }
       }
     </script>
   </head>
@@ -389,6 +402,7 @@
                             class="past-purchases-navlink1"
                           >
                             <div
+                              id="refund-button-1"
                               cursor="pointer"
                               class="past-purchases-container19 template-button"
                             >
@@ -520,6 +534,7 @@
                             class="past-purchases-navlink2"
                           >
                             <div
+                              id="refund-button-2"
                               cursor="pointer"
                               class="past-purchases-container32 template-button"
                             >
@@ -657,6 +672,7 @@
                             class="past-purchases-navlink3"
                           >
                             <div
+                              id="refund-button-3"
                               cursor="pointer"
                               class="past-purchases-container45 template-button"
                             >
