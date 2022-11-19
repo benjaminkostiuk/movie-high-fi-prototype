@@ -93,7 +93,6 @@
         typeTotal = Math.round(typeTotal * 100) / 100
         typeTotalPrice.innerHTML = `$${typeTotal}`;
         
-        console.log(quantities)
         var subtotal = 0;
         for (const key in prices) {
           subtotal += prices[key] * quantities[key];
