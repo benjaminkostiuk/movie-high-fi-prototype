@@ -326,9 +326,6 @@
   flex-direction: column;
   justify-content: flex-start;
   background-color: var(--dl-color-gray-white);
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
 }
 .payment-title-container {
   flex: 0 0 auto;
@@ -659,11 +656,16 @@
 }
 .payment-container23 {
   flex: 0 0 auto;
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment-container23:hover {
+  background-color: var(--dl-color-gray-900);
 }
 .payment-container24 {
   flex: 0 0 auto;
@@ -764,6 +766,11 @@
   height: 23px;
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment-container30:hover {
+  background-color: var(--dl-color-gray-900);
 }
 .payment-icon06 {
   width: auto;
@@ -856,6 +863,11 @@
   margin-top: 0px;
   align-items: flex-start;
   margin-bottom: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment-container36:hover {
+  background-color: var(--dl-color-gray-900);
 }
 .payment-icon14 {
   width: auto;
@@ -943,6 +955,11 @@
   height: 31px;
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment-container44:hover {
+  background-color: var(--dl-color-gray-900);
 }
 .payment-icon18 {
   width: auto;

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Payment - Online Movie Ticket System</title>
+    <title>Vibe | Payment</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta property="og:title" content="Payment - Online Movie Ticket System" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -56,6 +57,16 @@
         }
     </style>
     <link rel="stylesheet" href="./style.css" />
+    <script>
+      function showHideElement(elemId) {
+        var x = document.getElementById(elemId);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
   </head>
   <body>
     <div>
@@ -158,7 +169,7 @@
           <div class="payment-main-box">
             <div class="payment-tabs">
               <div class="payment-payment"><span>Payment</span></div>
-              <div class="payment-past-purchases"><span>Past Orders</span></div>
+              <a href="past-purchases.html" class="payment-navlink"><div class="payment-past-purchases"><span>Past Orders</span></div></a>
             </div>
             <div class="payment-order-overview">
               <div class="payment-title-container">
@@ -266,7 +277,7 @@
               <div class="payment-container20">
                 <div class="payment-container21">
                   <div class="payment-container22">
-                    <div class="payment-container23">
+                    <div class="payment-container23" onclick="showHideElement('saved-method')">
                       <div class="payment-container24">
                         <svg viewBox="0 0 1408 1024" class="payment-icon">
                           <path
@@ -278,7 +289,7 @@
                       </div>
                       <span class="payment-text31">Saved</span>
                     </div>
-                    <div class="payment-container25">
+                    <div class="payment-container25" id="saved-method">
                       <svg
                         viewBox="0 0 1316.5714285714284 1024"
                         class="payment-icon04"
@@ -307,7 +318,7 @@
                 </div>
               </div>
               <div class="payment-container29">
-                <div class="payment-container30">
+                <div class="payment-container30" onclick="showHideElement('applepay-method')">
                   <svg viewBox="0 0 1408 1024" class="payment-icon06">
                     <path
                       d="M0 192h896v192h-896v-192zM0 448h896v192h-896v-192zM0 704h896v192h-896v-192z"
@@ -317,7 +328,7 @@
                   </svg>
                   <span class="payment-text36">Apple Pay</span>
                 </div>
-                <div class="payment-container31">
+                <div class="payment-container31" id="applepay-method" style="display: none;">
                   <div class="payment-container32">
                     <div class="payment-container33">
                       <span class="payment-text37">Card &amp; Billing</span>
@@ -346,7 +357,7 @@
                 </div>
               </div>
               <div class="payment-container35">
-                <div class="payment-container36">
+                <div class="payment-container36" onclick="showHideElement('rewardpoints-method')">
                   <svg viewBox="0 0 1408 1024" class="payment-icon14">
                     <path
                       d="M0 192h896v192h-896v-192zM0 448h896v192h-896v-192zM0 704h896v192h-896v-192z"
@@ -356,7 +367,7 @@
                   </svg>
                   <span class="payment-text41">Reward Points</span>
                 </div>
-                <div class="payment-container37">
+                <div class="payment-container37" id="rewardpoints-method" style="display: none;">
                   <div class="payment-container38">
                     <span>Points Balance:</span>
                     <span class="payment-text43">7351 points</span>
@@ -370,7 +381,7 @@
                 <div class="payment-container41">
                   <div class="payment-container42">
                     <div class="payment-container43">
-                      <div class="payment-container44">
+                      <div class="payment-container44" onclick="showHideElement('newcard-method')" >
                         <svg viewBox="0 0 1408 1024" class="payment-icon18">
                           <path
                             d="M0 192h896v192h-896v-192zM0 448h896v192h-896v-192zM0 704h896v192h-896v-192z"
@@ -380,7 +391,7 @@
                         </svg>
                         <span class="payment-text45">Add new Card</span>
                       </div>
-                      <div class="payment-container45">
+                      <div class="payment-container45" id="newcard-method" style="display: none;">
                         <div class="payment-container46">
                           <span>Cardholder:</span>
                           <input
@@ -437,6 +448,7 @@
     <script
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
+    >
+  </script>
   </body>
 </html>
