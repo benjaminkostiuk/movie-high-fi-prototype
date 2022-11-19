@@ -66,6 +66,50 @@
           x.style.display = "none";
         }
       }
+
+      function manageOrderTotal(type) {
+        prices = {
+          'adult-ticket': 10.99,
+          'child-ticket': 8.50,
+          'senior-ticket': 9.50,
+          'large-popcorn': 5.99,
+          'fountain-pop': 2.99
+        }
+
+        quantities = {
+          'adult-ticket': 2,
+          'child-ticket': 2,
+          'senior-ticket': 2,
+          'large-popcorn': 2,
+          'fountain-pop': 2
+        }
+
+        var value = parseInt(document.getElementById(type).value);
+        quantities[type] = value;
+
+        var typeTotalPrice = document.getElementById(`${type}-total`);
+        typeTotalPrice.innerHTML = `$${prices[type] * quantities[type]}`;
+        
+        var subtotal = 0;
+        for (const key in prices) {
+          subtotal += prices[key] * quantities[key];
+        }
+        subtotal = Math.round(subtotal * 100) / 100
+        var taxes = subtotal * 0.13;
+        taxes = Math.round(taxes * 100) / 100;
+        var total = subtotal + taxes;
+        total = Math.round(total * 100) / 100;
+
+        var subtotalText = document.getElementById('subtotal');
+        subtotalText.innerHTML = `$${subtotal}`;
+
+        var taxesText = document.getElementById('taxes');
+        taxesText.innerHTML = `$${taxes}`;
+
+        var totalText = document.getElementById('total');
+        totalText.innerHTML = `$${total}`;
+
+      }
     </script>
   </head>
   <body>
@@ -207,24 +251,33 @@
                       <div class="payment-container08">
                         <input
                           type="number"
+                          min="0"
                           value="2"
                           class="payment-textinput input"
+                          id="adult-ticket"
+                          onchange="manageOrderTotal('adult-ticket')"
                         />
                         <input
                           type="number"
+                          min="0"
                           value="2"
                           class="payment-textinput01 input"
+                          id="child-ticket"
+                          onchange="manageOrderTotal('child-ticket')"
                         />
                         <input
                           type="number"
-                          value="1"
+                          min="0"
+                          value="2"
                           class="payment-textinput02 input"
+                          id="senior-ticket"
+                          onchange="manageOrderTotal('senior-ticket')"
                         />
                       </div>
                       <div class="payment-container09">
-                        <span class="payment-text17">$21.98</span>
-                        <span class="payment-text18">$17.00</span>
-                        <span class="payment-text19">$19.00</span>
+                        <span class="payment-text17" id="adult-ticket-total">$21.98</span>
+                        <span class="payment-text18" id="child-ticket-total">$17.00</span>
+                        <span class="payment-text19" id="senior-ticket-total">$19.00</span>
                       </div>
                     </div>
                   </div>
@@ -241,13 +294,19 @@
                     <div class="payment-container13">
                       <input
                         type="number"
+                        min="0"
                         value="2"
                         class="payment-textinput03 input"
+                        id="large-popcorn"
+                        onchange="manageOrderTotal('large-popcorn')"
                       />
                       <input
                         type="number"
+                        min="0"
                         value="2"
                         class="payment-textinput04 input"
+                        id="fountain-pop"
+                        onchange="manageOrderTotal('fountain-pop')"
                       />
                     </div>
                     <div class="payment-container14">
@@ -260,15 +319,15 @@
               <div class="payment-container15">
                 <div class="payment-container16">
                   <span class="payment-text24">Subtotal:</span>
-                  <span>$75.94</span>
+                  <span id="subtotal">$75.94</span>
                 </div>
                 <div class="payment-container17">
                   <span class="payment-text26">Taxes:</span>
-                  <span class="payment-text27">$9.87</span>
+                  <span class="payment-text27" id="taxes">$9.87</span>
                 </div>
                 <div class="payment-container18">
                   <span class="payment-text28">Total:</span>
-                  <span>$85.81</span>
+                  <span id="total">$85.81</span>
                 </div>
               </div>
               <div class="payment-container19">
