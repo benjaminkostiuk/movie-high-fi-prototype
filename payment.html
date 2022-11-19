@@ -67,8 +67,7 @@
         }
       }
 
-      function manageOrderTotal(type) {
-        prices = {
+      var prices = {
           'adult-ticket': 10.99,
           'child-ticket': 8.50,
           'senior-ticket': 9.50,
@@ -76,7 +75,7 @@
           'fountain-pop': 2.99
         }
 
-        quantities = {
+      var quantities = {
           'adult-ticket': 2,
           'child-ticket': 2,
           'senior-ticket': 2,
@@ -84,12 +83,17 @@
           'fountain-pop': 2
         }
 
+      function manageOrderTotal(type) {
+
         var value = parseInt(document.getElementById(type).value);
         quantities[type] = value;
 
         var typeTotalPrice = document.getElementById(`${type}-total`);
-        typeTotalPrice.innerHTML = `$${prices[type] * quantities[type]}`;
+        typeTotal = prices[type] * quantities[type]
+        typeTotal = Math.round(typeTotal * 100) / 100
+        typeTotalPrice.innerHTML = `$${typeTotal}`;
         
+        console.log(quantities)
         var subtotal = 0;
         for (const key in prices) {
           subtotal += prices[key] * quantities[key];
