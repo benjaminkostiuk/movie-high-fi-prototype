@@ -60,6 +60,67 @@
         }
     </style>
     <link rel="stylesheet" href="./style.css" />
+    <script>
+      function showHideElement(elemId) {
+        var x = document.getElementById(elemId);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function manageRefundTotal(orderNum) {
+        ops = {
+          1: {
+            "check-1": 10.99,
+            "check-2": 8.50,
+            "check-3": 9.50,
+            "check-4": 5.99,
+            "check-5": 2.99
+          },
+          2: {
+            "check-6": 10.99,
+            "check-7": 8.50,
+            "check-8": 5.99,
+          },
+          3: {
+            "check-9": 8.50,
+            "check-10": 19,
+            "check-11": 17.97
+          }
+        };
+
+        labels = {
+          1: "total-1",
+          2: "total-2",
+          3: "total-3"
+        };
+
+        buttons = {
+          1: "refund-button-1",
+          2: "refund-button-2",
+          3: "refund-button-3"
+        };
+
+        sum = 0;
+        for(const prop in ops[orderNum]) {
+          var checkBox = document.getElementById(prop);
+          if(checkBox.checked === true) {
+            sum += ops[orderNum][prop];
+          }
+        }
+        var text = document.getElementById(labels[orderNum]);
+        // Set the inner html
+        text.innerHTML = `$${sum.toFixed(2)}`;
+        var button = document.getElementById(buttons[orderNum]);
+        if(sum == 0) {     
+          button.style.pointerEvents = "none";
+          button.style.backgroundColor = "gray";
+        } else {
+          button.style = null;
+        }
+      }
+    </script>
   </head>
   <body>
     <div>
@@ -170,7 +231,7 @@
                 <span>Past Orders</span>
               </div>
             </div>
-            <div class="past-purchases-order-overview">
+            <div class="past-purchases-order-overview" style="height: 100%">
               <div class="past-purchases-title-container">
                 <h2 class="past-purchases-text003">Request a Refund</h2>
                 <span>
@@ -183,7 +244,7 @@
                 </span>
               </div>
               <div class="past-purchases-orders">
-                <div class="order-order">
+                <div class="order-order" onclick="showHideElement('first-order')">
                   <div class="order-container">
                     <svg viewBox="0 0 1408 1024" class="order-icon">
                       <path
@@ -199,7 +260,7 @@
                   </div>
                   <span><span>Oct. 30 2022</span></span>
                 </div>
-                <div class="past-purchases-order-body">
+                <div id="first-order" style="display: none;" class="past-purchases-order-body">
                   <div class="past-purchases-container01">
                     <div class="past-purchases-tickets-details">
                       <span class="past-purchases-text009">
@@ -224,6 +285,8 @@
                           <div class="past-purchases-container02">
                             <div class="past-purchases-container03">
                               <input
+                                id="check-1"
+                                onclick="manageRefundTotal(1)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox"
@@ -242,6 +305,8 @@
                           <div class="past-purchases-container05">
                             <div class="past-purchases-container06">
                               <input
+                                id="check-2"
+                                onclick="manageRefundTotal(1)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox01"
@@ -260,6 +325,8 @@
                           <div class="past-purchases-container08">
                             <div class="past-purchases-container09">
                               <input
+                                id="check-3"
+                                onclick="manageRefundTotal(1)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox02"
@@ -287,6 +354,8 @@
                           <div class="past-purchases-container11">
                             <div class="past-purchases-container12">
                               <input
+                                id="check-4"
+                                onclick="manageRefundTotal(1)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox03"
@@ -303,6 +372,8 @@
                           <div class="past-purchases-container14">
                             <div class="past-purchases-container15">
                               <input
+                                id="check-5"
+                                onclick="manageRefundTotal(1)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox04"
@@ -323,7 +394,7 @@
                       <div class="past-purchases-container17">
                         <span class="past-purchases-text040">
                           <span>Refund Total:</span>
-                          <span>$37.97</span>
+                          <span id="total-1">$37.97</span>
                         </span>
                         <div class="past-purchases-container18">
                           <a
@@ -331,6 +402,7 @@
                             class="past-purchases-navlink1"
                           >
                             <div
+                              id="refund-button-1"
                               cursor="pointer"
                               class="past-purchases-container19 template-button"
                             >
@@ -342,7 +414,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="order-order">
+                <div class="order-order" onclick="showHideElement('second-order')">
                   <div class="order-container">
                     <svg viewBox="0 0 1408 1024" class="order-icon">
                       <path
@@ -358,7 +430,7 @@
                   </div>
                   <span><span>Oct. 28 2022</span></span>
                 </div>
-                <div class="past-purchases-order-body1">
+                <div id="second-order" style="display: none;" class="past-purchases-order-body1">
                   <div class="past-purchases-container20">
                     <div class="past-purchases-tickets-details1">
                       <span class="past-purchases-text044">
@@ -375,8 +447,7 @@
                         </span>
                         <span>
                           <span class="past-purchases-text052">Showtime:</span>
-                          <span class="past-purchases-text053">2</span>
-                          <span>:30pm</span>
+                          <span class="past-purchases-text053">2:30pm</span>
                         </span>
                       </div>
                       <div class="past-purchases-ticket-numbers2">
@@ -384,6 +455,8 @@
                           <div class="past-purchases-container21">
                             <div class="past-purchases-container22">
                               <input
+                                id="check-6"
+                                onclick="manageRefundTotal(2)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox05"
@@ -402,6 +475,8 @@
                           <div class="past-purchases-container24">
                             <div class="past-purchases-container25">
                               <input
+                                id="check-7"
+                                onclick="manageRefundTotal(2)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox06"
@@ -429,6 +504,8 @@
                           <div class="past-purchases-container27">
                             <div class="past-purchases-container28">
                               <input
+                                id="check-8"
+                                onclick="manageRefundTotal(2)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox07"
@@ -449,7 +526,7 @@
                       <div class="past-purchases-container30">
                         <span class="past-purchases-text068">
                           <span>Refund Total:</span>
-                          <span>$25.48</span>
+                          <span id="total-2">$25.48</span>
                         </span>
                         <div class="past-purchases-container31">
                           <a
@@ -457,6 +534,7 @@
                             class="past-purchases-navlink2"
                           >
                             <div
+                              id="refund-button-2"
                               cursor="pointer"
                               class="past-purchases-container32 template-button"
                             >
@@ -468,7 +546,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="order-order">
+                <div class="order-order" onclick="showHideElement('third-order')">
                   <div class="order-container">
                     <svg viewBox="0 0 1408 1024" class="order-icon">
                       <path
@@ -484,7 +562,7 @@
                   </div>
                   <span><span>Oct. 26 2022</span></span>
                 </div>
-                <div class="past-purchases-order-body2">
+                <div id="third-order" style="display: none;" class="past-purchases-order-body2">
                   <div class="past-purchases-container33">
                     <div class="past-purchases-tickets-details2">
                       <span class="past-purchases-text072">
@@ -515,6 +593,8 @@
                           <div class="past-purchases-container34">
                             <div class="past-purchases-container35">
                               <input
+                                id="check-9"
+                                onclick="manageRefundTotal(3)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox08"
@@ -533,6 +613,8 @@
                           <div class="past-purchases-container37">
                             <div class="past-purchases-container38">
                               <input
+                                id="check-10"
+                                onclick="manageRefundTotal(3)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox09"
@@ -560,6 +642,8 @@
                           <div class="past-purchases-container40">
                             <div class="past-purchases-container41">
                               <input
+                                id="check-11"
+                                onclick="manageRefundTotal(3)"
                                 type="checkbox"
                                 checked=""
                                 class="past-purchases-checkbox10"
@@ -580,7 +664,7 @@
                       <div class="past-purchases-container43">
                         <span class="past-purchases-text097">
                           <span>Refund Total:</span>
-                          <span>$45.47</span>
+                          <span id="total-3">$45.47</span>
                         </span>
                         <div class="past-purchases-container44">
                           <a
@@ -588,6 +672,7 @@
                             class="past-purchases-navlink3"
                           >
                             <div
+                              id="refund-button-3"
                               cursor="pointer"
                               class="past-purchases-container45 template-button"
                             >
