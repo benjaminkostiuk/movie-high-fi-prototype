@@ -581,6 +581,16 @@
   height: 289px;
   object-fit: cover;
 }
+.location-img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: var(--dl-space-space-unit);
+}
+.search-by-name{
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+}
 .seat-selection-main-container3 {
   gap: var(--dl-space-space-twounits);
   flex: 0 0 auto;

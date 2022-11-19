@@ -182,7 +182,12 @@
                   data-thq="thq-dropdown-toggle"
                   class="seat-selection-main-dropdown-toggle1"
                 >
-                  <span class="seat-selection-main-text02">Sub-menu Item</span>
+                  <img
+                    alt="pastedImage"
+                    src="public/playground_assets/location.png"
+                    class="location-img"
+                  />
+                  <span class="seat-selection-main-text02">Search nearby</span>
                 </div>
               </li>
               <li
@@ -193,7 +198,11 @@
                   data-thq="thq-dropdown-toggle"
                   class="seat-selection-main-dropdown-toggle2"
                 >
-                  <span class="seat-selection-main-text03">Sub-menu Item</span>
+                <input
+                  type="text"
+                  class="search-by-name"
+                  placeholder="Search by name"
+                />
                 </div>
               </li>
             </ul>
@@ -228,7 +237,12 @@
                   data-thq="thq-dropdown-toggle"
                   class="seat-selection-main-dropdown-toggle4"
                 >
-                  <span class="seat-selection-main-text05">Sub-menu Item</span>
+                <img
+                  alt="pastedImage"
+                  src="public/playground_assets/googletips_calendar_mini.jpg"
+                  width="200"
+                  height="200" 
+                />
                 </div>
               </li>
             </ul>
@@ -271,16 +285,12 @@
                   <span class="movie-ticket-text1"><span>$12.99</span></span>
                   <span class="movie-ticket-text2"><span>Age: 0-12</span></span>
                 </div>
-                <div class="add-subtract-button-container">
-                  <button class="add-subtract-button-remove-btn button">
+                <div class="add-subtract-button-container" >
+                  <button id="decrementAdult" class="add-subtract-button-remove-btn button">
                     <span>-</span>
                   </button>
-                  <input
-                    type="text"
-                    placeholder="0"
-                    class="add-subtract-button-input input"
-                  />
-                  <button class="add-subtract-button-add-btn button">
+                  <div id="numberAdults" class="add-subtract-button-input input">0</div>
+                  <button id="incrementAdult" class="add-subtract-button-add-btn button">
                     <span>+</span>
                   </button>
                 </div>
@@ -292,15 +302,11 @@
                   <span class="movie-ticket-text2"><span>Age: 0-12</span></span>
                 </div>
                 <div class="add-subtract-button-container">
-                  <button class="add-subtract-button-remove-btn button">
+                  <button id="decrementChild" class="add-subtract-button-remove-btn button">
                     <span>-</span>
                   </button>
-                  <input
-                    type="text"
-                    placeholder="0"
-                    class="add-subtract-button-input input"
-                  />
-                  <button class="add-subtract-button-add-btn button">
+                  <div id="numberChilds" class="add-subtract-button-input input">0</div>
+                  <button id="incrementChild" class="add-subtract-button-add-btn button">
                     <span>+</span>
                   </button>
                 </div>
@@ -312,15 +318,11 @@
                   <span class="movie-ticket-text2"><span>Age: 65+</span></span>
                 </div>
                 <div class="add-subtract-button-container">
-                  <button class="add-subtract-button-remove-btn button">
+                  <button id="decrementSenior" class="add-subtract-button-remove-btn button">
                     <span>-</span>
                   </button>
-                  <input
-                    type="text"
-                    placeholder="0"
-                    class="add-subtract-button-input input"
-                  />
-                  <button class="add-subtract-button-add-btn button">
+                  <div id="numberSeniors" class="add-subtract-button-input input">0</div>
+                  <button id="incrementSenior" class="add-subtract-button-add-btn button">
                     <span>+</span>
                   </button>
                 </div>
@@ -389,6 +391,7 @@
         </div>
       </div>
     </div>
+    <script src="button-counter.js"></script>
     <script
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
