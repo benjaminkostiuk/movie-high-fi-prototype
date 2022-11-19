@@ -261,6 +261,7 @@
 .past-purchases-page-container {
   width: 100%;
   height: auto;
+  min-height: inherit;
   display: flex;
   align-self: stretch;
   align-items: flex-start;

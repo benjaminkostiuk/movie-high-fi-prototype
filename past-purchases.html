@@ -60,6 +60,16 @@
         }
     </style>
     <link rel="stylesheet" href="./style.css" />
+    <script>
+      function showHideElement(elemId) {
+        var x = document.getElementById(elemId);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
   </head>
   <body>
     <div>
@@ -170,7 +180,7 @@
                 <span>Past Orders</span>
               </div>
             </div>
-            <div class="past-purchases-order-overview">
+            <div class="past-purchases-order-overview" style="height: 100%">
               <div class="past-purchases-title-container">
                 <h2 class="past-purchases-text003">Request a Refund</h2>
                 <span>
@@ -183,7 +193,7 @@
                 </span>
               </div>
               <div class="past-purchases-orders">
-                <div class="order-order">
+                <div class="order-order" onclick="showHideElement('first-order')">
                   <div class="order-container">
                     <svg viewBox="0 0 1408 1024" class="order-icon">
                       <path
@@ -199,7 +209,7 @@
                   </div>
                   <span><span>Oct. 30 2022</span></span>
                 </div>
-                <div class="past-purchases-order-body">
+                <div id="first-order" style="display: none;" class="past-purchases-order-body">
                   <div class="past-purchases-container01">
                     <div class="past-purchases-tickets-details">
                       <span class="past-purchases-text009">
@@ -342,7 +352,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="order-order">
+                <div class="order-order" onclick="showHideElement('second-order')">
                   <div class="order-container">
                     <svg viewBox="0 0 1408 1024" class="order-icon">
                       <path
@@ -358,7 +368,7 @@
                   </div>
                   <span><span>Oct. 28 2022</span></span>
                 </div>
-                <div class="past-purchases-order-body1">
+                <div id="second-order" style="display: none;" class="past-purchases-order-body1">
                   <div class="past-purchases-container20">
                     <div class="past-purchases-tickets-details1">
                       <span class="past-purchases-text044">
@@ -375,8 +385,7 @@
                         </span>
                         <span>
                           <span class="past-purchases-text052">Showtime:</span>
-                          <span class="past-purchases-text053">2</span>
-                          <span>:30pm</span>
+                          <span class="past-purchases-text053">2:30pm</span>
                         </span>
                       </div>
                       <div class="past-purchases-ticket-numbers2">
@@ -468,7 +477,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="order-order">
+                <div class="order-order" onclick="showHideElement('third-order')">
                   <div class="order-container">
                     <svg viewBox="0 0 1408 1024" class="order-icon">
                       <path
@@ -484,7 +493,7 @@
                   </div>
                   <span><span>Oct. 26 2022</span></span>
                 </div>
-                <div class="past-purchases-order-body2">
+                <div id="third-order" style="display: none;" class="past-purchases-order-body2">
                   <div class="past-purchases-container33">
                     <div class="past-purchases-tickets-details2">
                       <span class="past-purchases-text072">
