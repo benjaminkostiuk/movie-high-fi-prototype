@@ -46,7 +46,7 @@
 
       body::-webkit-scrollbar-thumb {
          background-color:white;
-         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+         box-shadow:0 -100vh 0 100vh #5128f5;
        }
     </style>
     <style data-section-id="dropdown">
@@ -66,8 +66,11 @@
 
       <div class="seat-selection2seat-map-pop-up-container">
         <div class="seat-selection2seat-map-pop-up-container01">
+          <div class="seat-selection2seat-map-pop-up-title">
+            <h2 class="seat-selection2seat-map-pop-up-text">Seat Selection</h2>
+          </div>
           <div class="seat-selection2seat-map-pop-up-container02">
-            <span class="seat-selection2seat-map-pop-up-text">SCREEN</span>
+            <span class="seat-selection2seat-map-pop-up-text1">SCREEN</span>
             <div class="seat-selection2seat-map-pop-up-container03">
               <div class="seat-selection2seat-map-pop-up-left-seats">
                 <div class="seat-selection2seat-map-pop-up-container04">
@@ -215,18 +218,30 @@
               </div>
             </div>
           </div>
-          <a href="seat-selection-main.html" class="seat-selection2seat-map-pop-up-navlink">
-            <div
-              class="seat-selection2seat-map-pop-up-container14 template-button"
+          <div class="seat-selection2seat-map-pop-up-container14">
+            <a href="seat-selection-main.html" class="seat-selection2seat-map-pop-up-navlink">
+              <div
+                class="seat-selection2seat-map-pop-up-container15 template-button"
+              >
+                <span>Return to Movie Purchase</span>
+              </div>
+            </a>
+            <a
+              href="snack-selection.html"
+              class="seat-selection2seat-map-pop-up-navlink1"
             >
-              <span>Return to Seat Selection page</span>
-            </div>
-          </a>
+              <div
+                class="seat-selection2seat-map-pop-up-container16 template-button"
+              >
+                <span>Proceed to Snack Selection</span>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="seat-selection2seat-map-pop-up-container15">
+        <div class="seat-selection2seat-map-pop-up-container17">
           <span>Legend</span>
           <div class="seat-selection2seat-map-pop-up-legend">
-            <div class="seat-selection2seat-map-pop-up-container16">
+            <div class="seat-selection2seat-map-pop-up-container18">
               <button
                 disabled=""
                 class="seat-selection2seat-map-pop-up-button button"
@@ -235,7 +250,7 @@
               </button>
               <span>Available</span>
             </div>
-            <div class="seat-selection2seat-map-pop-up-container17">
+            <div class="seat-selection2seat-map-pop-up-container19">
               <button
                 disabled=""
                 class="seat-selection2seat-map-pop-up-button1 button"
@@ -244,7 +259,7 @@
               </button>
               <span>Unavailable</span>
             </div>
-            <div class="seat-selection2seat-map-pop-up-container18">
+            <div class="seat-selection2seat-map-pop-up-container20">
               <button
                 disabled=""
                 class="seat-selection2seat-map-pop-up-button2 button"
@@ -257,6 +272,7 @@
         </div>
       </div>
     </div>
+    <script src="js/seat-select.js"></script>
     <script
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
