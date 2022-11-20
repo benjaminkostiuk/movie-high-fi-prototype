@@ -514,9 +514,11 @@
 }
 .payment-text20 {
   align-self: flex-start;
+  padding-left: 20px;
 }
 .payment-text21 {
   align-self: flex-start;
+  padding-left: 20px;
 }
 .payment-container13 {
   flex: 0 0 auto;
@@ -815,6 +817,7 @@
   align-items: center;
   margin-right: 5px;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .payment-text40 {
   color: #007dff;
@@ -981,6 +984,7 @@
 .payment-container42 {
   color: #007dff;
   margin-right: 10px;
+  cursor: pointer;
 }
 .payment-container43 {
   flex: 0 0 auto;
