@@ -23,6 +23,10 @@
           alert('Email address is required to continue.');
           return false;
         }
+        if (!(emailInput.value == emailInput.value.match(/[a-z0-9]*@[a-z0-9]*\.[a-z0-9]*/))) {
+          alert('Please enter a valide mail address.');
+          return false;
+        }
         if (ageInput.value == "") {
           alert('Age is required to continue.');
           return false;
