@@ -46,7 +46,7 @@
 
       body::-webkit-scrollbar-thumb {
          background-color:white;
-         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+         box-shadow:0 -100vh 0 100vh #5128f5;
        }
     </style>
     <style data-section-id="dropdown">
@@ -59,8 +59,9 @@
         }
     </style>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
   </head>
-  <body>
+  <body onload="todaysDateCalendar()">
     <div>
       <link href="./seat-selection-main.css" rel="stylesheet" />
 
@@ -141,7 +142,7 @@
               <div id="open-mobile-menu" class="top-nav-signed-in-burger-menu">
                 <img
                   alt="pastedImage"
-                  src="/playground_assets/pastedimage-yxbd.svg"
+                  src="public/playground_assets/pastedimage-yxbd.svg"
                   class="top-nav-signed-in-mobile-menu-button"
                 />
               </div>
@@ -149,89 +150,23 @@
           </nav>
         </div>
         <div class="seat-selection-main-title">
-          <h2 class="seat-selection-main-text">Seat Selection</h2>
+          <h2 class="seat-selection-main-text">Movie Purchase</h2>
         </div>
         <div class="seat-selection-main-theatre-and-date">
-          <div
-            data-thq="thq-dropdown"
-            class="seat-selection-main-thq-dropdown list-item"
-          >
-            <div
-              data-thq="thq-dropdown-toggle"
-              class="seat-selection-main-dropdown-toggle"
-            >
-              <span class="seat-selection-main-text01">Theatre</span>
-              <div
-                data-thq="thq-dropdown-arrow"
-                class="seat-selection-main-dropdown-arrow"
-              >
-                <svg viewBox="0 0 1024 1024" class="seat-selection-main-icon">
-                  <path d="M426 726v-428l214 214z"></path>
-                </svg>
-              </div>
-            </div>
-            <ul
-              data-thq="thq-dropdown-list"
-              class="seat-selection-main-dropdown-list"
-            >
-              <li
-                data-thq="thq-dropdown"
-                class="seat-selection-main-nearby list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  class="seat-selection-main-dropdown-toggle1"
-                >
-                  <span class="seat-selection-main-text02">Sub-menu Item</span>
-                </div>
-              </li>
-              <li
-                data-thq="thq-dropdown"
-                class="seat-selection-main-search list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  class="seat-selection-main-dropdown-toggle2"
-                >
-                  <span class="seat-selection-main-text03">Sub-menu Item</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div
-            data-thq="thq-dropdown"
-            class="seat-selection-main-thq-dropdown1 list-item"
-          >
-            <div
-              data-thq="thq-dropdown-toggle"
-              class="seat-selection-main-dropdown-toggle3"
-            >
-              <span class="seat-selection-main-text04">Date</span>
-              <div
-                data-thq="thq-dropdown-arrow"
-                class="seat-selection-main-dropdown-arrow1"
-              >
-                <svg viewBox="0 0 1024 1024" class="seat-selection-main-icon2">
-                  <path d="M426 726v-428l214 214z"></path>
-                </svg>
-              </div>
-            </div>
-            <ul
-              data-thq="thq-dropdown-list"
-              class="seat-selection-main-dropdown-list1"
-            >
-              <li
-                data-thq="thq-dropdown"
-                class="seat-selection-main-dropdown list-item"
-              >
-                <div
-                  data-thq="thq-dropdown-toggle"
-                  class="seat-selection-main-dropdown-toggle4"
-                >
-                  <span class="seat-selection-main-text05">Sub-menu Item</span>
-                </div>
-              </li>
-            </ul>
+          <select data-role="select">
+            <option value="dedicated_corei3_hp">Select theatre...</option>
+            <optgroup label="Nearby">
+                <option value="dedicated_pentium_hp">Hamilton Mountain Vibe Cinemas</option>
+                <option value="dedicated_smart_corei3_hp">Jackson Square Vibe Cinemas</option>
+            </optgroup>
+            <optgroup label="Other Theatres">
+                <option value="mini">Burlington Brant Vibe Cinemas</option>
+                <option value="site">Mississauga Square One Vibe Cinemas</option>
+                <option value="portal">Toronto Scotia Bank Vibe Cinemas</option>
+            </optgroup>
+        </select>
+          <div id="calendar">
+            <!-- <input id="calendar" type="text" data-role="calendarpicker" class="date" placeholder="Date" data-input-format="%d/%m/%y" data-min-date=null> -->
           </div>
         </div>
         <div class="seat-selection-main-container1">
@@ -261,7 +196,7 @@
               <br />
               <br />
               <span class="seat-selection-main-text17">Ratings:</span>
-              <span>5/5</span>
+              <input data-role="rating" data-value="4" data-message="(2354)">
               <br />
             </span>
             <div class="seat-selection-main-ticket-prices">
@@ -271,16 +206,12 @@
                   <span class="movie-ticket-text1"><span>$12.99</span></span>
                   <span class="movie-ticket-text2"><span>Age: 0-12</span></span>
                 </div>
-                <div class="add-subtract-button-container">
-                  <button class="add-subtract-button-remove-btn button">
+                <div class="add-subtract-button-container" >
+                  <button id="decrementAdult" class="add-subtract-button-remove-btn button">
                     <span>-</span>
                   </button>
-                  <input
-                    type="text"
-                    placeholder="0"
-                    class="add-subtract-button-input input"
-                  />
-                  <button class="add-subtract-button-add-btn button">
+                  <div id="numberAdults" class="add-subtract-button-input input">0</div>
+                  <button id="incrementAdult" class="add-subtract-button-add-btn button">
                     <span>+</span>
                   </button>
                 </div>
@@ -292,15 +223,11 @@
                   <span class="movie-ticket-text2"><span>Age: 0-12</span></span>
                 </div>
                 <div class="add-subtract-button-container">
-                  <button class="add-subtract-button-remove-btn button">
+                  <button id="decrementChild" class="add-subtract-button-remove-btn button">
                     <span>-</span>
                   </button>
-                  <input
-                    type="text"
-                    placeholder="0"
-                    class="add-subtract-button-input input"
-                  />
-                  <button class="add-subtract-button-add-btn button">
+                  <div id="numberChilds" class="add-subtract-button-input input">0</div>
+                  <button id="incrementChild" class="add-subtract-button-add-btn button">
                     <span>+</span>
                   </button>
                 </div>
@@ -312,15 +239,11 @@
                   <span class="movie-ticket-text2"><span>Age: 65+</span></span>
                 </div>
                 <div class="add-subtract-button-container">
-                  <button class="add-subtract-button-remove-btn button">
+                  <button id="decrementSenior" class="add-subtract-button-remove-btn button">
                     <span>-</span>
                   </button>
-                  <input
-                    type="text"
-                    placeholder="0"
-                    class="add-subtract-button-input input"
-                  />
-                  <button class="add-subtract-button-add-btn button">
+                  <div id="numberSeniors" class="add-subtract-button-input input">0</div>
+                  <button id="incrementSenior" class="add-subtract-button-add-btn button">
                     <span>+</span>
                   </button>
                 </div>
@@ -389,6 +312,9 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <script src="js/button-counter.js"></script>
+    <script src="js/calendar-date.js"></script>
     <script
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
