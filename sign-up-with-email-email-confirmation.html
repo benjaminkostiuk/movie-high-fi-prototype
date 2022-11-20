@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      function onlyNumberKey(evt) {
+        // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+          return false;
+        return true;
+      }
+    </script>
     <title>Vibe | Sign up with email - Email confirmation</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta
@@ -77,7 +86,7 @@
               <div class="top-nav-sign-up-page-left">
                 <img
                   alt="pastedImage"
-                  src="public/playground_assets/logo.png"
+                  src="/playground_assets/pastedimage-no9b-200h.png"
                   class="top-nav-sign-up-page-logo"
                 />
                 <div class="top-nav-sign-up-page-links">
@@ -227,11 +236,13 @@
                   class="sign-up-with-email-email-confirmation-password-confirmation-container"
                 >
                   <input
-                    type="text"
-                    placeholder="* * * *"
-                    autocomplete="off"
-                    class="sign-up-with-email-email-confirmation-textinput input"
-                  />
+                  maxlength="4"
+                  type="text"
+                  onkeypress="return onlyNumberKey(event)"
+                  placeholder="* * * *"
+                  autocomplete="off"
+                  class="sign-up-with-email-email-confirmation-textinput input"
+                />
                 </div>
                 <div
                   class="sign-up-with-email-email-confirmation-next-button-container"
@@ -244,7 +255,7 @@
                       class="sign-up-with-email-email-confirmation-next-button"
                     >
                       <span class="sign-up-with-email-email-confirmation-next">
-                        Confirm
+                        Next
                       </span>
                     </div>
                   </a>

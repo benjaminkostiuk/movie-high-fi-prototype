@@ -73,6 +73,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .top-nav-sign-up-page-top-nav-signed-in {
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -599,7 +600,6 @@
   color: rgb(255, 255, 255);
   font-style: normal;
   font-weight: 600;
-  margin-right: 0px;
 }
 @media(max-width: 991px) {
   .sign-up-with-email-personal-information-titles {
