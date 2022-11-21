@@ -282,6 +282,10 @@
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-unit);
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s;
+}
+.blog-post-card2-link:hover{
+  background-color: var(--dl-color-gray-500);
 }
 .blog-post-card2-text03 {
   color: var(--dl-color-gray-white);
@@ -384,6 +388,11 @@
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s;
+  border: None;
+}
+.blog-post-card2-button:hover{
+  background-color: var(--dl-color-gray-500);
 }
 .blog-post-card2-root-class-name {
   background-color: var(--dl-color-template-blue-bg-light-hover);
@@ -572,6 +581,15 @@
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s;
+  border: None;
+}
+.gallery-card1-navlink:hover {
+  background-color: var(--dl-color-gray-500);
+}
+.popular-banner {
+  border-radius: 50px;
+  width: 100%;
 }
 
 

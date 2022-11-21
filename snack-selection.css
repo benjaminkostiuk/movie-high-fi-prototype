@@ -296,6 +296,11 @@
   align-self: center;
   border-radius: 50px;
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s;
+  border: none;
+}
+.blog-post-card1-remove-btn:hover{
+  background-color: var(--dl-color-gray-500);
 }
 .blog-post-card1-input {
   width: var(--dl-size-size-small);
@@ -309,6 +314,11 @@
   align-self: center;
   border-radius: 50px;
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s;
+  border: none;
+}
+.blog-post-card1-add-btn:hover{
+  background-color: var(--dl-color-gray-500);
 }
 
 
