@@ -1,7 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Vibe | Sign up with phone - Phone number</title>
+    <script>
+      function checkPassword() {
+        if (phoneInput1.value.length != 14) {
+          alert('Please enter a valide Canadian phone number.');
+          return false;
+        }
+        if (phoneInput1.value != phoneInput2.value) {
+          alert('The two phone numbers must be identical.');
+          return false;
+        }
+        else {
+          return true;
+        }
+      }
+      function formatPhoneNumber(value) {
+        if (!value) return value;
+        const phoneNumber = value.replace(/[^\d]/g, '');
+        const phoneNumberLength = phoneNumber.length;
+        if (phoneNumberLength < 4) return phoneNumber;
+        if (phoneNumberLength < 7) {
+          return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+        }
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+          3,
+          6
+        )}-${phoneNumber.slice(6, 9)}`;
+      }
+
+      function phoneNumberFormatter1() {
+        const inputField1 = document.getElementById('phoneInput1');
+        const formattedInputValue1 = formatPhoneNumber(inputField1.value);
+        inputField1.value = formattedInputValue1;
+      }
+
+      function phoneNumberFormatter2() {
+        const inputField2 = document.getElementById('phoneInput2');
+        const formattedInputValue2 = formatPhoneNumber(inputField2.value);
+        inputField2.value = formattedInputValue2;
+      }
+    </script>
+    <title>Vibe | Sign up with phone - Password setup</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta
       property="og:title"
@@ -146,17 +186,17 @@
                   <div
                     class="sign-up-with-phone-phone-number-personal-information"
                   >
-                    <span class="sign-up-with-phone-phone-number-text2">
+                    <span class="sign-up-with-phone-phone-number-text02">
                       Phone number
                     </span>
                   </div>
                   <div class="sign-up-with-phone-phone-number-password-setup">
-                    <span class="sign-up-with-phone-phone-number-text3">
+                    <span class="sign-up-with-phone-phone-number-text03">
                       Password setup
                     </span>
                   </div>
                   <div class="sign-up-with-phone-phone-number-payment-details">
-                    <span class="sign-up-with-phone-phone-number-text4">
+                    <span class="sign-up-with-phone-phone-number-text04">
                       Payment details
                     </span>
                   </div>
@@ -165,14 +205,19 @@
               <div class="sign-up-with-phone-phone-number-right-panel">
                 <div class="sign-up-with-phone-phone-number-password-container">
                   <div class="sign-up-with-phone-phone-number-phone-number">
-                    <span class="sign-up-with-phone-phone-number-text5">
-                      Phone number
+                    <span class="sign-up-with-phone-phone-number-text05">
+                      <span>Phone number</span>
+                      <span class="sign-up-with-phone-phone-number-text07">
+                        *
+                      </span>
                     </span>
                   </div>
                   <div
                     class="sign-up-with-phone-phone-number-phone-number-input"
                   >
                     <input
+                      onkeydown="phoneNumberFormatter1()"
+                      id="phoneInput1"
                       type="text"
                       autocomplete="off"
                       class="sign-up-with-phone-phone-number-textinput input"
@@ -183,12 +228,17 @@
                   class="sign-up-with-phone-phone-number-confirm-phone-container"
                 >
                   <div class="sign-up-with-phone-phone-number-password">
-                    <span class="sign-up-with-phone-phone-number-text6">
-                      Confirm phone number
+                    <span class="sign-up-with-phone-phone-number-text08">
+                      <span>Confirm phone number</span>
+                      <span class="sign-up-with-phone-phone-number-text10">
+                        *
+                      </span>
                     </span>
                   </div>
                   <div class="sign-up-with-phone-phone-number-password-input">
                     <input
+                      onkeydown="phoneNumberFormatter2()"
+                      id="phoneInput2"
                       type="text"
                       autocomplete="off"
                       class="sign-up-with-phone-phone-number-textinput1 input"
@@ -196,7 +246,7 @@
                   </div>
                 </div>
                 <div
-                  class="sign-up-with-phone-phone-number-next-button-container"
+                  class="sign-up-with-phone-phone-number-next-button-container" onclick="return checkPassword()"
                 >
                   <a
                     href="sign-up-with-phone-password-setup.html"

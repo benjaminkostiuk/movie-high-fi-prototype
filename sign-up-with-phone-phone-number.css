@@ -73,6 +73,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .top-nav-sign-up-page-top-nav-signed-in {
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -235,7 +236,7 @@
   align-items: flex-start;
   padding-top: var(--dl-space-space-halfunit);
 }
-.sign-up-with-phone-phone-number-text2 {
+.sign-up-with-phone-phone-number-text02 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 22px;
   align-self: flex-start;
@@ -251,7 +252,7 @@
   padding-bottom: 0px;
   justify-content: flex-start;
 }
-.sign-up-with-phone-phone-number-text3 {
+.sign-up-with-phone-phone-number-text03 {
   color: var(--dl-color-template-blue-bg-light-hover);
   position: absolute;
   font-size: 14px;
@@ -266,7 +267,7 @@
   align-items: flex-start;
   padding-bottom: 14px;
 }
-.sign-up-with-phone-phone-number-text4 {
+.sign-up-with-phone-phone-number-text04 {
   color: var(--dl-color-template-blue-bg-light-hover);
   font-size: 14px;
   align-self: flex-end;
@@ -314,10 +315,13 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-phone-number-text5 {
+.sign-up-with-phone-phone-number-text05 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
+}
+.sign-up-with-phone-phone-number-text07 {
+  color: #ff0000;
 }
 .sign-up-with-phone-phone-number-phone-number-input {
   flex: 0 0 auto;
@@ -355,10 +359,13 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up-with-phone-phone-number-text6 {
+.sign-up-with-phone-phone-number-text08 {
   align-self: flex-end;
   font-style: normal;
   font-weight: 700;
+}
+.sign-up-with-phone-phone-number-text10 {
+  color: #ff0000;
 }
 .sign-up-with-phone-phone-number-password-input {
   flex: 0 0 auto;
