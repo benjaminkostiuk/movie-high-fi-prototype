@@ -31,6 +31,7 @@
 
       }
     </style>
+    <link rel="stylesheet" href="slideshow.css"/> 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
@@ -166,16 +167,12 @@
             </h1>
           </div>
           <div class="movie-selection-sign-in-version-blog">
-            <div class="movie-selection-sign-in-version-container2">
-              <div
-                class="blog-post-card2-blog-post-card blog-post-card2-root-class-name"
-              >
-                <img
-                  alt="image"
-                  src="https://images.unsplash.com/photo-1579445710183-f9a816f5da05?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGF2ZW5nZXJ8ZW58MHx8fHwxNjY4NDkxODE3&amp;ixlib=rb-4.0.3&amp;w=1500"
-                  image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
-                  class="blog-post-card2-image"
-                />
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <img class="popular-banner" src="public/playground_assets/avengers.jpg">
                 <div class="blog-post-card2-container">
                   <div class="blog-post-card2-container1">
                     <span class="blog-post-card2-text">
@@ -186,7 +183,7 @@
                     </span>
                   </div>
                   <h1 class="blog-post-card2-text02">
-                    <span>Dark Knight Rises</span>
+                    <span>Avengers: Endgame</span>
                   </h1>
                   <a
                     href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
@@ -198,8 +195,7 @@
                   </a>
                   <span class="blog-post-card2-text03">
                     <span>
-                      Batman being Batman. He is Batman and he is sad so he is
-                      defeating bad guys to get over his past.
+                      The remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.
                     </span>
                   </span>
                   <div class="blog-post-card2-stats">
@@ -257,17 +253,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="movie-selection-sign-in-version-container3">
-              <div
-                class="blog-post-card2-blog-post-card blog-post-card2-root-class-name"
-              >
-                <img
-                  alt="image"
-                  src="https://images.unsplash.com/photo-1579445710183-f9a816f5da05?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGF2ZW5nZXJ8ZW58MHx8fHwxNjY4NDkxODE3&amp;ixlib=rb-4.0.3&amp;w=1500"
-                  image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
-                  class="blog-post-card2-image"
-                />
+              <div class="mySlides fade">
+                <img class="popular-banner" src="public/playground_assets/dark_knight.jpg">
                 <div class="blog-post-card2-container">
                   <div class="blog-post-card2-container1">
                     <span class="blog-post-card2-text">
@@ -278,7 +265,7 @@
                     </span>
                   </div>
                   <h1 class="blog-post-card2-text02">
-                    <span>Dark Knight Rises</span>
+                    <span>The Dark Knight Rises</span>
                   </h1>
                   <a
                     href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;ab_channel=MarvelEntertainment"
@@ -290,8 +277,7 @@
                   </a>
                   <span class="blog-post-card2-text03">
                     <span>
-                      Batman being Batman. He is Batman and he is sad so he is
-                      defeating bad guys to get over his past.
+                      The remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.
                     </span>
                   </span>
                   <div class="blog-post-card2-stats">
@@ -349,8 +335,17 @@
                   </div>
                 </div>
               </div>
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-          </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
           <div class="movie-selection-sign-in-version-container4">
             <h1 class="movie-selection-sign-in-version-heading1">
               <span>MOVIES</span>
@@ -608,7 +603,7 @@
             </div>
           </div>
           <div class="movie-selection-sign-in-version-container6">
-            <h1 class="movie-selection-sign-in-version-heading3">Comedy</h1>
+            <h1 class="movie-selection-sign-in-version-heading3">Adventure</h1>
           </div>
           <div class="movie-selection-sign-in-version-gallery2">
             <div
@@ -694,7 +689,7 @@
             </div>
           </div>
           <div class="movie-selection-sign-in-version-container7">
-            <h1 class="movie-selection-sign-in-version-heading4">Romance</h1>
+            <h1 class="movie-selection-sign-in-version-heading4">Comedy</h1>
           </div>
           <div class="movie-selection-sign-in-version-gallery3">
             <div
@@ -868,6 +863,7 @@
         </div>
       </div>
     </div>
+    <script src="js/slideshow.js"></script>
     <script
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
